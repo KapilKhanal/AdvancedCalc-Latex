@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{minted}
+\usepackage{xcolor}
+
+\definecolor{LightGray}{gray}{0.9}
+%\definecolor{DarkGray}{gray}{0.1}
+
+%\pagecolor{DarkGray}
+
+\usemintedstyle{borland}
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\title{Advanced Calculus I}
+\author{Assignment-I : Kapil Khanal }
+\date{ }
+
+\begin{document}
+
+\maketitle
+
+\section{QUESTION 4b}
+
+
+\begin{given}
+Suppose $y \in f (C \cup D)$ 
+    then since for a function $f(x) = y$ ,
+    there exists $x \in C \cup D$ 
+\end{given}
+
+\begin{implications}
+Suppose $x \in C$  or $x \in D$
+    if $x \in C$ then $y= f(x) \in f(C)$ \newline
+Similarly  if $x \in D$ then $y= f(x) \in f(D)$ \newline
+Therefore, $y \in f(C) or y \in f(D)$ \\
+    $y \in f(C) \cup f(D)$
+
+\end{implications}
+
+\begin{b}
+$f(x) = \{f(x) \mid x \in X \} $ \newline
+$f(C) = \{f(x) \mid x \in C\} $ \newline
+$f(D) = \{f(x) \mid x \in D\} $ \newline
+$f(C\cap D) = \{f(x) \mid x \in C\hat D \} $
+
+Let, C = $\{1,2,3\}$ , D= $\{4,5,6\}$ \newline
+$C\capD  = \{1,2,3,4,5,6\}$ \newline
+$f(C\capD) = \{1,4,9,16,25,36\}$ \newline
+$f(C)\cap f(D) = \phi$
+$f(C\capD) = \{1,4,9,16,25,36\}$
+\end{b} 
+
+\section{QUESTION 6b}
+\begin{c}
+
+$A\cup(B\capC) = (A\cup B)\cap(A\cup C)$
+From the left hand side, \newline
+$x \in A or (x \in B and x \in C)$
+Using the distributive law, \newline 
+$(x \in A or x\in B) and (x \in A or x \in C)$ \newline
+$x \in (A \cup B) \cap (A \cup C)$
+Hence, RHS = LHS proved. 
+
+\end{c}
+
+\section{QUESTION 13}
+\begin{d}
+Assume, \newline 
+p(n) = $\frac{1}{1\cdot2}$  + $\frac{1}{2\cdot3} ..... $ + $\frac{1}{n\cdot(n+1)} $ = $\frac{n}{n+1}$
+
+from mathematical induction, \newline 
+Base case is $n = 1 $,\newline 
+$\frac{1}{1\cdot2}$ = $\frac{1}{1+1}$ \newline 
+hence, Base case verified, 
+Now, let's assume the statement $p(n)$ holds true, then by mathematical induction $p(n+1)$ should hold true as well. 
+p(n+1) = $\frac{1}{1\cdot2}$  + $\frac{1}{2\cdot3}...  $ + $\frac{1}{n\cdot(n+1)}$ + $\frac{1}{n\cdot(n+1)}$ = $\frac{n}{n+1}$ for all n \in N
+
+ = $\frac{n}{n+1}$ + $\frac{1}{n\cdot(n+1)}$
+ = $\frac{n(n+2)+1}{(n+1)(n+2)}$
+ = $\frac{n^2 + 2n+1}{(n+1)(n+2)}$ \newline 
+ = $\frac{n+1}{n+1+1}$\newline 
+ Hence, from mathematical induction this holds true
+ 
+\end{d}
+
+\end{document}
